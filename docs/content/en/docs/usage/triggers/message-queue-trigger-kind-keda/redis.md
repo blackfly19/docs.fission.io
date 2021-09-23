@@ -161,7 +161,7 @@ There are a couple of ways you can verify that the consumerfunc is called:
 {"level":"info","ts":1630296782.8708184,"caller":"app/main.go:58","msg":"Message sending to response successful"}
 ```
 
-- Connect to your redis server and check if messages are coming in the `response-topic` queue.
+- Connect redis-cli to your redis and check if messages are coming in output queue.
 
 ## Introducing an error
 
@@ -189,4 +189,4 @@ Successfully sent to input
 
 We can verify the message in error queue as we did earlier:
 
-- Connect to your redis server and check if messages are coming in `error-topic` queue.
+- Connect redis-cli to your redis and check if messages are coming in output queue.
